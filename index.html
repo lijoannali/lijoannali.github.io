@@ -3,94 +3,249 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IGTED 2024 Art & AI Workshop</title>
+  <title>Joanna Li</title>
   
   <style>
-    body {
-      font-family: Helvetica, sans-serif, sans-serif;
+    /* import the lekton font from google fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap');
+    
+    /* reset everything to zero */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #a2adb9; /* Slate blue background color */
-      color: #444; /* Dark text color */
+      box-sizing: border-box;
     }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #fff; /* White text color for the title */
-    }
-
-    .exercise {
-      background-color: #fff; /* White background color for exercises */
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-      width: 100%; 
-    }
-
-    .exercise h2 {
-      margin-top: 0;
-    }
-
-    footer {
-      background-color: #333;
+    
+    /* main body styling - black background white text */
+    body {
+      font-family: 'Lekton', monospace;
+      background-color: #000;
       color: #fff;
-      text-align: center;
-      padding: 10px 0;
+      padding: 20px;
+    }
+    
+    /* header stays fixed on the left side */
+    header {
       position: fixed;
-      bottom: 0;
-      width: 100%;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+    
+    /* my name at the top */
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+    
+    /* navigation links styling */
+    nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      margin-bottom: 8px;
+      transition: opacity 0.3s;
+    }
+    
+    /* make links fade when you hover over them */
+    nav a:hover {
+      opacity: 0.5;
+    }
+    
+    /* main content area pushed to the right */
+    main {
+      margin-left: 200px;
+      padding-top: 60px;
+    }
+    
+    /* space between sections */
+    section {
+      margin-bottom: 100px;
+    }
+    
+    /* big section headers */
+    h2 {
+      font-size: 48px;
+      font-weight: normal;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+    
+    /* paragraph text */
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    
+    /* mobile layout adjustments */
+    @media (max-width: 768px) {
+      header {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 40px;
+      }
+      
+      main {
+        margin-left: 0;
+        padding-top: 0;
+      }
+      
+      h2 {
+        font-size: 36px;
+      }
     }
   </style>
 </head>
 <body>
-
-  <div class="container">
-    <div class="title">
-      <h1>IGTED 2024 Art & AI</h1>
-    </div>
-
-    <div class="exercise">
-      <h2>0: Draw a Circle</h2>
-      <p> How do we use the code editor and functions?</p>
-      <a href="https://docs.google.com/document/d/1LrVnxmnMaeHQCBK-dSUONzzabvJXLr-4U9FtRfWElgc/edit?usp=sharing" class="big-link">Click Here for the IGTED Software Workshop Guide!</a>
-      <br>
-      <a href="https://www.google.com/search?client=safari&rls=en&q=rgb+color+picker&ie=UTF-8&oe=UTF-8" class="big-link"> RGB Color Picker!</a>
+  <!-- left side navigation -->
+  <header>
+    <h1>joanna li</h1>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#play">play</a>
+      <a href="#media">media</a>
+    </nav>
+  </header>
   
-    </div>
-    <iframe src="https://editor.p5js.org/jli40/full/aSrLEPOuM " target="_blank" style="width:100%; height:650px;"></iframe>
-
-    <div class="exercise">
-      <h2>1: Draw a Landscape</h2>
-      <p> We will learn how to draw a circle and change the color of the line and the background.</p>
-    </div>
-    <iframe src="https://editor.p5js.org/jli40/full/9tSFQm2s7" style="width:100%; height:650px;"></iframe>
-
-    <div class="exercise">
-      <h2>2: Circles Example </h2>
-      <p> Let's make a pattern! </p>
-    </div>
-    <iframe src="https://editor.p5js.org/jli40/full/J3mOGLl-9" style="width:100%; height:650px;"></iframe>
-
-    <div class="exercise">
-      <h2>3: Function for Flowers </h2>
-       <p> Let's use for-loops and functions!</p>
-      <a href="https://happycoding.io" class="big-link"> This exercise was adapted from happycoding.io </a>
-      <iframe src="https://editor.p5js.org/jli40/full/BmvmtKfod" style="width:100%; height:650px;"></iframe>
-    </div>
-
-    <div class="exercise">
-      <h2>4: Flower Mosaics </h2>
-      <p> Let's dissect a more complicated example, then customize and make it our own!</p>
-      <a href="https://happycoding.io" class="big-link"> Adapted from happycoding.io </a>
-      <iframe src="https://editor.p5js.org/jli40/full/BHRuoLdRh" style="width:100%; height:650px;"></iframe>
-    </div>
+  <!-- main content sections -->
+  <main>
+    <!-- about section -->
+    <section id="about">
+      <h2>about</h2>
+      <p>placeholder text for introduction and background</p>
+    </section>
+    
+    <!-- work section -->
+    <section id="work">
+      <h2>work</h2>
+      <p>placeholder text for professional projects</p>
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joanna Li</title>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Lekton', monospace;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    header {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+    
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+    
+    nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      margin-bottom: 8px;
+      transition: opacity 0.3s;
+    }
+    
+    nav a:hover {
+      opacity: 0.5;
+    }
+    
+    main {
+      margin-left: 200px;
+      padding-top: 60px;
+    }
+    
+    section {
+      margin-bottom: 100px;
+    }
+    
+    h2 {
+      font-size: 48px;
+      font-weight: normal;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 40px;
+      }
+      
+      main {
+        margin-left: 0;
+        padding-top: 0;
+      }
+      
+      h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>joanna li</h1>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#play">play</a>
+      <a href="#media">media</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2>about</h2>
+      <p>placeholder text for introduction and background</p>
+    </section>
+    
+    <section id="work">
+      <h2>work</h2>
+      <p>placeholder text for professional projects</p>
+    </section>
+    
+    <section id="play">
+      <h2>play</h2>
+      <p>placeholder text for creative experiments</p>
+    </section>
+    
+    <section id="media">
+      <h2>media</h2>
+      <p>placeholder text for talks and articles</p>
+    </section>
+  </main>
 </body>
+</html>
