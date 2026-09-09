@@ -1,251 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joanna Li</title>
-  
   <style>
-    /* import the lekton font from google fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap');
-    
-    /* reset everything to zero */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    /* main body styling - black background white text */
-    body {
-      font-family: 'Lekton', monospace;
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-    }
-    
-    /* header stays fixed on the left side */
-    header {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 100;
-    }
-    
-    /* my name at the top */
-    h1 {
-      font-size: 24px;
-      font-weight: normal;
-      margin-bottom: 15px;
-    }
-    
-    /* navigation links styling */
-    nav a {
+    .portrait {
+      width: 220px;
+      max-width: 100%;
+      height: auto;
       display: block;
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      margin-bottom: 8px;
-      transition: opacity 0.3s;
-    }
-    
-    /* make links fade when you hover over them */
-    nav a:hover {
-      opacity: 0.5;
-    }
-    
-    /* main content area pushed to the right */
-    main {
-      margin-left: 200px;
-      padding-top: 60px;
-    }
-    
-    /* space between sections */
-    section {
-      margin-bottom: 100px;
-    }
-    
-    /* big section headers */
-    h2 {
-      font-size: 48px;
-      font-weight: normal;
-      margin-bottom: 30px;
-      letter-spacing: -1px;
-    }
-    
-    /* paragraph text */
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 600px;
-    }
-    
-    /* mobile layout adjustments */
-    @media (max-width: 768px) {
-      header {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 40px;
-      }
-      
-      main {
-        margin-left: 0;
-        padding-top: 0;
-      }
-      
-      h2 {
-        font-size: 36px;
-      }
     }
   </style>
 </head>
 <body>
-  <!-- left side navigation -->
-  <header>
-    <h1>joanna li</h1>
-    <nav>
-      <a href="#about">about</a>
-      <a href="#work">work</a>
-      <a href="#play">play</a>
-      <a href="#media">media</a>
-    </nav>
-  </header>
-  
-  <!-- main content sections -->
+<div class="page">
+  <nav aria-label="Main navigation">
+    <a href="index.html" aria-current="page">About</a>
+    <a href="work.html">Work</a>
+    <a href="now.html">Now</a>
+    <a href="reading.html">Reading</a>
+  </nav>
   <main>
-    <!-- about section -->
-    <section id="about">
-      <h2>about</h2>
-      <p>placeholder text for introduction and background</p>
-    </section>
-    
-    <!-- work section -->
-    <section id="work">
-      <h2>work</h2>
-      <p>placeholder text for professional projects</p>
-    </section>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joanna Li</title>
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap');
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Lekton', monospace;
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-    }
-    
-    header {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 100;
-    }
-    
-    h1 {
-      font-size: 24px;
-      font-weight: normal;
-      margin-bottom: 15px;
-    }
-    
-    nav a {
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      margin-bottom: 8px;
-      transition: opacity 0.3s;
-    }
-    
-    nav a:hover {
-      opacity: 0.5;
-    }
-    
-    main {
-      margin-left: 200px;
-      padding-top: 60px;
-    }
-    
-    section {
-      margin-bottom: 100px;
-    }
-    
-    h2 {
-      font-size: 48px;
-      font-weight: normal;
-      margin-bottom: 30px;
-      letter-spacing: -1px;
-    }
-    
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 600px;
-    }
-    
-    @media (max-width: 768px) {
-      header {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 40px;
-      }
-      
-      main {
-        margin-left: 0;
-        padding-top: 0;
-      }
-      
-      h2 {
-        font-size: 36px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>joanna li</h1>
-    <nav>
-      <a href="#about">about</a>
-      <a href="#work">work</a>
-      <a href="#play">play</a>
-      <a href="#media">media</a>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="about">
-      <h2>about</h2>
-      <p>placeholder text for introduction and background</p>
-    </section>
-    
-    <section id="work">
-      <h2>work</h2>
-      <p>placeholder text for professional projects</p>
-    </section>
-    
-    <section id="play">
-      <h2>play</h2>
-      <p>placeholder text for creative experiments</p>
-    </section>
-    
-    <section id="media">
-      <h2>media</h2>
-      <p>placeholder text for talks and articles</p>
-    </section>
+    <h1>Joanna Li</h1>
+    <div class="intro">
+      <img
+        src="images/portrait.jpg"
+        alt="Joanna Li"
+        class="portrait"
+      >
+
+      <div class="bio">
+        <p>
+          I am Joanna Li, and I study electrical and computer
+          engineering at Rice University.
+        </p>
+
+        <p>
+          Chances are, you’ll find me sketching, cooking new
+          recipes, and visiting unexpected locations…
+        </p>
+
+        <p class="contact">
+          email | github | linkedin
+        </p>
+      </div>
+    </div>
   </main>
+</div>
 </body>
 </html>
