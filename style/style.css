@@ -6,7 +6,7 @@
       margin: 0;
       background: #eeeeee;
       color: #505050;
-      font-family: Noto, sans-serif;
+      font-family: var(--body-font, Arial, sans-serif);
       font-size: 18px;
       line-height: 1.6;
     }
@@ -49,7 +49,7 @@
 
     h1 {
       margin: 0 0 24px;
-      font-family: Georgia, serif;
+      font-family: var(--heading-font, Georgia, serif);
       font-size: 48px;
       font-weight: normal;
       line-height: 1.15;
@@ -148,7 +148,7 @@
       height: 240px;
       object-fit: cover;
       object-position: center;
-      border-radius:  100px;
+      border-radius: 64px;
     }
 
     .bio {
