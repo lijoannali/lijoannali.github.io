@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work — Joanna Li</title>
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/work.css">
   <script src="./style/font-preview.js" defer></script>
 </head>
 <body>
@@ -18,9 +19,37 @@
       </nav>
     </header>
 
-    <main>
-      <h2>Work</h2>
-      <p>I’ll share my projects here soon.</p>
+    <main class="work-page">
+      <h1>Work</h1>
+
+      <!-- Edit each experience and its highlight/lowlight directly below. -->
+      <article class="experience">
+        <h2>Rice Visual Intelligence Lab</h2>
+        <p class="experience-status">In the literature review phase for a fall project—details coming soon.</p>
+        <p>I ran image editing experiments for <a href="https://arxiv.org/abs/2606.01493">Splatshot</a> using Stable Diffusion: change one text token, inject attention maps to make sure the editing is controlled and localized. Last year, I also assisted with using Unity to create an “answer key” to see if a relightable Gaussian splat model was working well in a game engine.</p>
+        <dl class="experience-notes">
+          <div><dt>Highlight</dt><dd>Getting the image editing to finally work on a human face during finals.</dd></div>
+          <div><dt>Lowlight</dt><dd>Staring at distorted faces created by Stable Diffusion in the early morning hours.</dd></div>
+        </dl>
+      </article>
+
+      <article class="experience">
+        <h2>AWS <span class="experience-date">· Summer 2026</span></h2>
+        <p>I learned to navigate a huge CRM/notetaking codebase despite having no experience with the tech stack, using AI to locate docs and references, and built a favorites/pinned favorites system that made it to production after scaling improvements and error checks. I also created and defended system designs in review, including an asynchronous job system whose design was approved and which I built and presented as a working proof of concept.</p>
+        <dl class="experience-notes">
+          <div><dt>Highlight</dt><dd>Lunch conversations about movie reviews, the best sushi in Boston, and the future of SWE and research.</dd></div>
+          <div><dt>Lowlight</dt><dd>The Red Line shutting down and making my commute horrible.</dd></div>
+        </dl>
+      </article>
+
+      <article class="experience">
+        <h2>AWS <span class="experience-date">· Summer 2025</span></h2>
+        <p>I took research code notebooks and pieced together how the data was processed to make a pipeline for grouping applications for migration to the cloud. I also worked on helping solutions architects see why apps were grouped the way they were, with the goal of reducing broken dependencies during migration.</p>
+        <dl class="experience-notes">
+          <div><dt>Highlight</dt><dd>Pitching and defending my project to be continued after my internship.</dd></div>
+          <div><dt>Lowlight</dt><dd>Staying up late recording and re-recording demos—LLMs are stochastic.</dd></div>
+        </dl>
+      </article>
     </main>
   </div>
 </body>

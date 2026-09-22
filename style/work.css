@@ -1,0 +1,65 @@
+/* Work page: experience copy and simple highlight/lowlight blocks. */
+.work-page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.experience {
+  padding: 32px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.experience:last-child {
+  border-bottom: 0;
+}
+
+.experience h2 {
+  margin: 0 0 16px;
+  color: #172536;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.experience-date {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #505050;
+}
+
+.experience p {
+  margin: 0 0 20px;
+}
+
+.experience-status {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.experience-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 12px;
+  margin: 24px 0 0;
+  font-size: 16px;
+}
+
+.experience-notes > div {
+  padding: 16px 18px;
+  background: #e3e9e4;
+  border-radius: 6px;
+}
+
+.experience-notes > div + div {
+  background: #e7e4eb;
+}
+
+.experience-notes dt {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #172536;
+}
+
+.experience-notes dd {
+  margin: 0;
+}
