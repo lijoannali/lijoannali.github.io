@@ -16,7 +16,7 @@
 .experience h2 {
   margin: 0 0 16px;
   color: #172536;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.35;
 }
 
@@ -36,30 +36,42 @@
   font-style: italic;
 }
 
+/* Main descriptions use regular round bullets. */
+.experience-description {
+  margin: 0;
+  padding-left: 22px;
+  list-style-type: disc;
+}
+
+.experience-description li + li {
+  margin-top: 8px;
+}
+
+/* Always-visible highlight and lowlight notes. */
 .experience-notes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: 12px;
+  gap: 16px;
   margin: 24px 0 0;
   font-size: 16px;
+  color: #222;
 }
 
-.experience-notes > div {
-  padding: 16px 18px;
-  background: #e3e9e4;
-  border-radius: 6px;
+.experience-note {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 10px;
 }
 
-.experience-notes > div + div {
-  background: #e7e4eb;
+.note-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
 }
 
-.experience-notes dt {
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #172536;
+.experience-note p {
+  margin: 2px 0 0;
 }
 
-.experience-notes dd {
-  margin: 0;
+.experience-lowlight {
+  color: #555;
 }
